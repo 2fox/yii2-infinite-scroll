@@ -1,5 +1,5 @@
 <?php
-namespace darkcs\infinitescroll;
+namespace twofox\infinitescroll;
 
 use yii\web\AssetBundle;
 
