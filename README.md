@@ -34,7 +34,7 @@ echo \yii\widgets\ListView::widget([
     'summary' => false,
     'layout' => '{items}<div class="pagination-wrap">{pager}</div>',
     'pager' => [
-        'class' => \darkcs\infinitescroll\InfiniteScrollPager::className(),
+        'class' => \twofox\infinitescroll\InfiniteScrollPager::className(),
         'paginationSelector' => '.pagination-wrap',
         'pjaxContainer' => $pjax->id,
     ],
