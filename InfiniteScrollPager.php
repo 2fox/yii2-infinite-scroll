@@ -1,6 +1,6 @@
 <?php
 
-namespace 2fox\infinitescroll;
+namespace twofox\infinitescroll;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
