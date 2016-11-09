@@ -102,7 +102,13 @@
                         },
                         success: function (text) {
                             var html = $(text);
-                            object.find(options.item).last().after(html.find(options.item).hide().fadeIn('slow'));
+                            var item = object.find(options.item).last();
+
+                            $('html, body').animate({
+                                scrollTop: item.offset().top - item.height()
+                            }, 350);
+
+                            item.after(html.find(options.item).hide().fadeIn('slow'));
                             $(options.wrapper).find(options.pagination).html(html.find(options.pagination).html());
                             options.state.isLoadingNextPage = false;
                             methods.hideLoadingText();
@@ -134,8 +140,6 @@
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
         } else if (typeof method === 'object' || !method) {
             return methods.init.apply(this, arguments);
-        } else {
-            $.error('Метод "' + method + '" не найден');
         }
         return this;
     }
