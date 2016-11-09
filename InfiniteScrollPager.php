@@ -1,6 +1,6 @@
 <?php
 
-namespace darkcs\infinitescroll;
+namespace 2fox\infinitescroll;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
