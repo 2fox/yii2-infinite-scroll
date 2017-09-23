@@ -11,5 +11,6 @@ class InfiniteScrollAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\JqueryAsset',
+        'yii\widgets\PjaxAsset',
     ];
 }
