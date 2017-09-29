@@ -6,7 +6,7 @@ Installation
 ------------
 
 ```
-php composer.phar require --prefer-dist "twofox/yii2-infinite-scroll" "*"
+php composer.phar require --prefer-dist "2fox/yii2-infinite-scroll" "*"
 ```
 
 Options
